@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+</head>
+
+
+</html>
+<body>
+    <button onclick="printNumbers(0)"  id="num1">0</button>
+    <button onclick="printNumbers(1)"  id="num1">1</button>
+    <button onclick="printNumbers(2)"  id="num1">2</button>
+    <button onclick="printNumbers(3)"  id="num1">3</button>
+    <button onclick="printNumbers(4)"  id="num1">4</button>
+    <button onclick="printNumbers(5)"  id="num1">5</button>
+    <button onclick="printNumbers(6)"  id="num1">6</button>
+    <button onclick="printNumbers(7)"  id="num1">7</button>
+    <button onclick="printNumbers(8)"  id="num1">8</button>
+    <button onclick="printNumbers(9)" id="num9">9</button>
+    <button onclick="operator('sum');"  id="add" class="operator" id="num9">+</button>
+    
+    <button onclick="clearPrint();" id="substract" class="operator" id="num9">-</button>
+    <button onclick="clearPrint();"id="multiply" class="operator" id="num9">*</button>
+    <button onclick="clearPrint();" id="divide" class="operator" id="num9">/</button>
+    
+    <div id="screen"></div>
+
+</body>
+
+<script>
+
+let number = "";
+let clearPrintvar = 0;
+let operator = 0
+
+function printNumbers(num){
+    if(clearPrintvar ==1){
+        document.getElementById("screen").innerHTML = "";
+    }
+    number += num;
+    document.getElementById("screen").innerHTML = number;
+}
+
+function clearPrint(){
+    clearPrintvar =1;
+    alert
+}
+
+</script>
