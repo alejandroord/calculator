@@ -1,0 +1,88 @@
+.num,
+.operator,
+.functions {
+  font-family: "Roboto", sans-serif;
+}
+.generalContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.num {
+  width: 80px;
+  height: 80px;
+  background-color: #505050;
+  border: 0px;
+  border-radius: 100px;
+  color: white;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+}
+.num:active {
+  background-color: #8e8d8d;
+}
+
+.num0 {
+  width: 170px;
+  height: 80px;
+  background-color: #505050;
+  border: 0px;
+  border-radius: 100px;
+  color: white;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+}
+.num0:active {
+  background-color: #8e8d8d;
+}
+.operator {
+  width: 80px;
+  height: 80px;
+  background-color: #ff9500;
+  border: 0px;
+  border-radius: 100px;
+  color: white;
+  font-size: 35px;
+}
+.operator:active {
+  background-color: #feb044;
+}
+.container button {
+  margin: 5px;
+}
+.functions {
+  width: 80px;
+  height: 80px;
+  background-color: #d4d4d2;
+  border: 0px;
+  border-radius: 100px;
+  color: #505050;
+  font-size: 35px;
+}
+
+.functions:active {
+  width: 80px;
+  height: 80px;
+  background-color: #f2f2f2;
+  border: 0px;
+  border-radius: 100px;
+  color: #505050;
+  font-size: 35px;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; 
+}
+.screenContainer {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-end; 
+  height: 30vh;
+}
+
+#screen {
+  color: white;
+  font-size: 100px;
+}

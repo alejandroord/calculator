@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <div class="generalContainer">
+      <div class="containerMove">
+        <div class="screenContainer">
+          <div id="screen">0</div>
+        </div>
+        <div class="container">
+          <button onclick="reset();" id="ac" class="functions" id="num9">
+            AC
+          </button>
+          <button
+            onclick="operator('divide');"
+            id="divide"
+            class="operator"
+            id="divide"
+          >
+            /
+          </button>
+        </div>
+        <div class="container">
+          <button onclick="printNumbers(7)" id="num7" class="num">7</button>
+          <button onclick="printNumbers(8)" id="num8" class="num">8</button>
+          <button onclick="printNumbers(9)" id="num9" class="num">9</button>
+          <button
+            onclick="operator('multiply');"
+            id="multiply"
+            class="operator"
+            id="multiply"
+          >
+            X
+          </button>
+        </div>
 
+        <div class="container">
+          <button onclick="printNumbers(4)" id="num4" class="num">4</button>
+          <button onclick="printNumbers(5)" id="num5" class="num">5</button>
+          <button onclick="printNumbers(6)" id="num6" class="num">6</button>
+          <button
+            onclick="operator('substract');"
+            id="substract"
+            class="operator"
+          >
+            -
+          </button>
+        </div>
+        <div class="container">
+          <button onclick="printNumbers(1)" id="num1" class="num">1</button>
+          <button onclick="printNumbers(2)" id="num2" class="num">2</button>
+          <button onclick="printNumbers(3)" id="num3" class="num">3</button>
+          <button
+            onclick="operator('sum');"
+            aria-colcount="add"
+            class="operator"
+            id="sum"
+          >
+            +
+          </button>
+        </div>
+        <div class="container">
+          <button onclick="printNumbers(0)" id="num0" class="num0">0</button>
+          <button onclick="printNumbers('.')" id="point" class="num">,</button>
+          <button
+            onclick="operator('equal');"
+            id="equal"
+            class="operator"
+            id="num9"
+          >=
+            
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
 </html>
-<body>
-    <button onclick="printNumbers(0)"  id="num1">0</button>
-    <button onclick="printNumbers(1)"  id="num1">1</button>
-    <button onclick="printNumbers(2)"  id="num1">2</button>
-    <button onclick="printNumbers(3)"  id="num1">3</button>
-    <button onclick="printNumbers(4)"  id="num1">4</button>
-    <button onclick="printNumbers(5)"  id="num1">5</button>
-    <button onclick="printNumbers(6)"  id="num1">6</button>
-    <button onclick="printNumbers(7)"  id="num1">7</button>
-    <button onclick="printNumbers(8)"  id="num1">8</button>
-    <button onclick="printNumbers(9)" id="num9">9</button>
-    <button onclick="operator('sum');"  id="add" class="operator" id="num9">+</button>
-    
-    <button onclick="clearPrint();" id="substract" class="operator" id="num9">-</button>
-    <button onclick="clearPrint();"id="multiply" class="operator" id="num9">*</button>
-    <button onclick="clearPrint();" id="divide" class="operator" id="num9">/</button>
-    
-    <div id="screen"></div>
-
-</body>
-
-<script>
-
-let number = "";
-let clearPrintvar = 0;
-let operator = 0
-
-function printNumbers(num){
-    if(clearPrintvar ==1){
-        document.getElementById("screen").innerHTML = "";
-    }
-    number += num;
-    document.getElementById("screen").innerHTML = number;
-}
-
-function clearPrint(){
-    clearPrintvar =1;
-    alert
-}
-
-</script>
